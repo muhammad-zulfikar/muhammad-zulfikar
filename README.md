@@ -1,27 +1,4 @@
 ```sql
-SELECT 
-  name,
-  age,
-  role,
-  education,
-  experience,
-  projects,
-  skills,
-  url  
-FROM
-  profile.info
-  LEFT JOIN profile.education
-    ON profile.info.id = profile.education.id
-  LEFT JOIN profile.experience
-    ON profile.info.id = profile.experience.id
-    LEFT JOIN profile.skills
-    ON profile.info.id = profile.skills.id
-WHERE 
-  name = 'Muhammad Zulfikar'
-LIMIT 10;
-```
-
-```sql
 INSERT INTO profile.info (name, age, role, url)
 VALUES 
   ('Muhammad Zulfikar', 20, 'Data Analyst', 'https://zul.pages.dev'),
@@ -58,14 +35,14 @@ ask_me_about = [
     "International Relations"
 ]
 
-technologies = {
+tools = {
     "programming_languages": ["Python", "SQL", "R", "Shell"],
     "databases": ["BigQuery", "MsSQLServer", "MySQl"],
-    "data_visualization": ["Tableau", "Excel", "PowerBI", "Matplotlib", "Seaborn"],
-    "math_tools": ["NumPy", "Pandas", "SciPy"], 
+    "visualization": ["Tableau", "Excel", "PowerBI", "Matplotlib", "Seaborn"],
+    "statistics": ["NumPy", "Pandas", "SciPy"], 
     "software": ["Microsoft 365", "Google Workspace"],
     "webdev": ["HTML", "CSS", "Javascript", "ReactJS"],
-    "operating_systems": ["Windows", "Ubuntu", "Android"],
+    "OS": ["Windows", "Ubuntu", "Android"],
     "editors": ["VSCode", "Jupyter Notebook", "Google Colab", "GitHub.dev", "ViM", "Notepad"]
 }
 
