@@ -14,3 +14,27 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+```sql
+SELECT 
+  name,
+  age,
+  skills,
+  education,
+  experience,
+  projects,
+  url  
+FROM
+  profile.info
+  LEFT JOIN profile.education
+    ON profile.info_id = profile.education_id
+  LEFT JOIN profile.projects
+    ON profile.info_id = profile.projects_id
+  LEFT JOIN profile.experience
+    ON profile.info_id = profile.experience_id 
+WHERE 
+  name = 'Muhammad Zulfikar'
+GROUP BY
+  name
+LIMIT 10;
+```
