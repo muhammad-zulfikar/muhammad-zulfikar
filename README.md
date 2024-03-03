@@ -1,32 +1,5 @@
-```sql
-INSERT INTO profile.info (name, age, role, url)
-VALUES 
-  ('Muhammad Zulfikar', 20, 'Data Analyst', 'https://zul.pages.dev'),
-
-INSERT INTO profile.skills (skills)  
-VALUES
-  ('SQL'),
-  ('Python'),
-  ('Tableau'),
-  ('R'),
-  ('Excel'),
-  ('Power BI');
-  
-INSERT INTO profile.experience (company, title)
-VALUES
-  ('quantium', 'Data Analyst Intern'),
-  ('ID/X Partners', 'Data Scientist Intern');
-
-INSERT INTO profile.education (school, degree, major)
-VALUES
-  ('Universitas Pembangunan Nasional Veteran Jakarta', 'Undergraduate', 'International Relations')
-```
-
-<hr>
-
-
 ```python
-website_url = "https://zul.pages.dev"
+website_url = "https://muhammad-zulfikar.web.app"
 
 ask_me_about = [
     "Data Analysis", 
