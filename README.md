@@ -1,6 +1,4 @@
 ```python
-website_url = "https://muhammad-zulfikar.web.app"
-
 ask_me_about = [
     "Data Analysis", 
     "Operating System",
@@ -9,29 +7,24 @@ ask_me_about = [
 ]
 
 tools = {
-    "programming_languages": ["Python", "SQL", "R", "Shell"],
-    "databases": ["BigQuery", "MsSQLServer", "MySQl"],
+    "languages": ["Python", "SQL", "R", "Shell"],
+    "databases": ["BigQuery", "MsSQLServer", "MySQL"],
     "visualization": ["Tableau", "Excel", "PowerBI", "Matplotlib", "Seaborn"],
-    "statistics": ["NumPy", "Pandas", "SciPy"], 
-    "software": ["Microsoft 365", "Google Workspace"],
-    "webdev": ["HTML", "CSS", "Javascript", "ReactJS"],
-    "OS": ["Windows", "Ubuntu", "Android"],
-    "editors": ["VSCode", "Jupyter Notebook", "Google Colab", "GitHub.dev", "ViM", "Notepad"]
+    "statistics": ["NumPy", "Pandas", "SciPy"],
+    "webdev": ["HTML", "CSS", "Javascript", "VueJS"],
+    "editors": ["VSCode", "Jupyter Notebook", "Google Colab"]
 }
 
 skills = [
-    "Decision making",
-    "Problem solving", 
+    "Troubleshooting",
     "Analytical thinking",
-    "Time management",
-    "Quick learner"
+    "Time management"
 ]
 
 interests = [
     "Data",
     "Technology",
     "Coding", 
-    "Reading",
     "Music",
     "Tetris"
 ]
