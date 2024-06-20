@@ -1,20 +1,18 @@
 ```python
-ask_me_about = [
-    "Data Analysis", 
-    "Operating System",
-    "Web Development",
-    "International Relations"
-]
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
-tools = {
-    "languages": ["Python", "SQL", "R", "Shell"],
-    "databases": ["BigQuery", "MsSQLServer", "MySQL"],
-    "visualization": ["Tableau", "Excel", "PowerBI", "Matplotlib", "Seaborn"],
-    "webdev": ["HTML", "CSS", "Javascript", "VueJS"],
-    "editors": ["VSCode", "Jupyter Notebook", "Google Colab"]
-}
+skills = ['Python', 'SQL', 'RStudio', 'Spreadsheets', 'PowerBI', 'Tableau', 'HTML', 'CSS', 'Javascript', 'Vue']
+
+skills_text = ' '.join(skills)
+
+wordcloud = WordCloud(background_color=None, mode='RGBA',).generate(skills_text)
+
+plt.imshow(wordcloud)
+plt.axis('off')
+plt.show()
+
 ```
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=muhammad-zulfikar&layout=compact" />
-</div>
+
+![png](wordcloud.png)
